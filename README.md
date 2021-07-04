@@ -29,4 +29,6 @@ https://www.soft8soft.com/blender-to-webgl-in-4-simple-steps/
 -----------------------------------------------------------------
 
 
-İnternette bulduğum geojson ve csv dosyaları üzerinden çalıştım 
+İnternette bulduğum hazır geojson ve csv dosyaları üzerinden çalıştım 
+Blenderda oluşturduğum dosyayı webe üç boyutlu olarak atmak istediğimde üç boyutlu olarak gözükmedi 
+sebebini tam olarak anlayamasamda kullandığım Marina GIS ile aldığım için böyle olduğunu varsayıyorum.
