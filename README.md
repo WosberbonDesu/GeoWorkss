@@ -27,3 +27,6 @@ https://www.soft8soft.com/blender-to-webgl-in-4-simple-steps/
 ### Folium ve Geopandas kütüphanelerine baktım youtube üzerinden örneklerini araştırdım daha kısa algoritmalar ve farklı parametreler için github'ta bulunan diğer projelere 
 ### göz atacağım
 -----------------------------------------------------------------
+
+
+İnternette bulduğum geojson ve csv dosyaları üzerinden çalıştım 
