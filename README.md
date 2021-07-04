@@ -23,7 +23,7 @@ https://www.blend4web.com/en/
 https://www.soft8soft.com/verge3d/
 https://www.soft8soft.com/blender-to-webgl-in-4-simple-steps/
 -----------------------------------------------------------------
-Blender ile yağtığım harita için shading ayarlarına baktım Terrain Shading modelleri ile oluşturduğum harita üzerinde shadow ve bump ayarlamalarını yaptım
-Folium ve Geopandas kütüphanelerine baktım youtube üzerinden örneklerini araştırdım daha kısa algoritmalar ve farklı parametreler için github'ta bulunan diğer projelere 
-göz atacağım
+# Blender ile yağtığım harita için shading ayarlarına baktım Terrain Shading modelleri ile oluşturduğum harita üzerinde shadow ve bump ayarlamalarını yaptım
+# Folium ve Geopandas kütüphanelerine baktım youtube üzerinden örneklerini araştırdım daha kısa algoritmalar ve farklı parametreler için github'ta bulunan diğer projelere 
+# göz atacağım
 -----------------------------------------------------------------
