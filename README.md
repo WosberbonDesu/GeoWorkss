@@ -12,7 +12,13 @@
  import vega_datasets   # bu kütüphane ile çalışıldı
  import branca.element # bu kütüphane ile çalışıldı
 ```
+
+
+
+
 ### Kaynaklar: 
+https://github.com/ptabriz/FOSS4G_workshop
+
 https://developers.google.com/maps/documentation
 https://developers.google.com/maps/documentation/directions/overview
 https://www.youtube.com/watch?v=u8Fg-u-VWUE&list=LL&index=3&t=60s&ab_channel=4DResearchLab
