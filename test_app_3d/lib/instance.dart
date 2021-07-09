@@ -101,7 +101,7 @@ class _MapViewState extends State<MapView> {
     );
   }
 
-  // Method for retrieving the current location
+  
   _getCurrentLocation() async {
     await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
         .then((Position position) async {
@@ -142,17 +142,15 @@ class _MapViewState extends State<MapView> {
     }
   }
 
-  // Method for calculating the distance between two places
+ 
   Future<bool> _calculateDistance() async {
     try {
-      // Retrieving placemarks from addresses
+      
       List<Location> startPlacemark = await locationFromAddress(_startAddress);
       List<Location> destinationPlacemark =
       await locationFromAddress(_destinationAddress);
 
-      // Use the retrieved coordinates of the current position,
-      // instead of the address if the start position is user's
-      // current position, as it results in better accuracy.
+      
       double startLatitude = _startAddress == _currentAddress
           ? _currentPosition.latitude
           : startPlacemark[0].latitude;
