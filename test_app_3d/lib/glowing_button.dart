@@ -17,8 +17,8 @@ class _GlowingButtonState extends State<GlowingButton> {
   var scale = 1.0;
   @override
   Widget build(BuildContext context) {
-    //On mobile devices, gesture detector is perfect
-    //However for desktop and web we can show this effect on hover too
+    
+    
     return GestureDetector(
       onTapUp: (val) {
         setState(() {
