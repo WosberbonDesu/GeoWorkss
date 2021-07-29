@@ -44,74 +44,94 @@ class _LocationAppState extends State<LocationApp> {
 
     return Scaffold(
 
+      backgroundColor: Colors.blueGrey.shade700,
+
 
       appBar: AppBar(
-        title: Text(
-            "Location Service"
+        backgroundColor: Colors.grey.shade800,
+        title: Center(
+          child: Text(
+              "Location Service",style: TextStyle(
+            color: Colors.yellowAccent
+          ),
+          ),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.location_on_outlined,
-              size: 45.0,
-              color: Colors.redAccent,
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              "images/matya.png",
             ),
-            SizedBox(height: 10.0,),
-            RichText(
-              text: TextSpan(
-                text: 'GET ',
-                style: DefaultTextStyle.of(context).style,
-                children: const <TextSpan>[
-                  TextSpan(
-                      text: 'USER',
-                      style: TextStyle(
+            fit: BoxFit.cover
+          )
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.location_on_outlined,
+                size: 45.0,
+                color: Colors.redAccent,
+              ),
+              SizedBox(height: 10.0,),
+              RichText(
+                text: TextSpan(
+                  text: 'GET ',
+                  style: DefaultTextStyle.of(context).style,
+                  children: const <TextSpan>[
+                    TextSpan(
+                        text: 'USER',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 26.0,
+                            color: Colors.white
+                        )
+                    ),
+                    TextSpan(
+                        text: ' LOCATION',
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 26.0,
-                          color: Colors.white
-                      )
-                  ),
-                  TextSpan(
-                      text: ' LOCATION',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 26.0,
-                        color: Colors.blue,
+                          color: Colors.blue,
 
-                      )
-                  ),
-                ],
+                        )
+                    ),
+                  ],
+                ),
               ),
-            ),
-            SizedBox(height: 20.0,),
-            Center(
-              child: Text(
-                  locationmessage  //long.toString()
+              SizedBox(height: 20.0,),
+              Center(
+                child: Text(
+                    locationmessage,
+                  style: TextStyle(
+                    color: Colors.white
+                  ),//long.toString()
+                ),
               ),
-            ),
 
-            TextButton(
-              onPressed: (){
-                getCurrentLocation();
-              },
-              style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.red)),
-              child: Text("Get Current Location",style: TextStyle(
-                  color: Colors.white
-              ),),
-            )
-            //Text(
-            //"Get user Location",
-            //style: TextStyle(
-            //fontSize: 26.0,
-            //color: Colors.blue.shade700,
-            //fontWeight: FontWeight.bold,
+              TextButton(
+                onPressed: (){
+                  getCurrentLocation();
+                },
+                style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.red)),
+                child: Text("Get Current Location",style: TextStyle(
+                    color: Colors.white
+                ),),
+              )
+              //Text(
+              //"Get user Location",
+              //style: TextStyle(
+              //fontSize: 26.0,
+              //color: Colors.blue.shade700,
+              //fontWeight: FontWeight.bold,
 
-            //),
-            //),
-          ],
+              //),
+              //),
+            ],
+          ),
         ),
       ),
     );

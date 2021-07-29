@@ -35,6 +35,29 @@ dependencies:
   flutter_polyline_points: ^1.0.0
   geocoding: ^2.0.0
   syncfusion_flutter_maps: ^19.2.46-beta
+  firebase_core: ^1.3.0
+  firebase_auth: ^2.0.0
+  fluttertoast: ^8.0.7
+  google_sign_in: ^5.0.4
+  provider: ^5.0.0
+  flutter_signin_button: ^2.0.0
+  http: ^0.13.3
+  flutter_rating_bar: ^4.0.0
+  url_launcher: ^6.0.9
+  location: ^4.3.0
+  flutter_html: ^2.1.0
+  webview_flutter: ^2.0.9
+  flutter_webview_plugin: ^0.4.0
+  shared_preferences: ^2.0.6
+  like_button: ^2.0.2
+  flutter_compass: ^0.6.1
+  syncfusion_flutter_charts: ^19.2.46+1
+  google_fonts: ^2.1.0
+  flutter_launcher_icons: ^0.9.0
+
+
+
+
 
 
 
@@ -45,6 +68,12 @@ dev_dependencies:
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "images/nen.jpg"
+
+
 # The following section is specific to Flutter.
 flutter:
 
@@ -53,10 +82,52 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+
+
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/aa.png
     - images/harita.png
+    - images/tr-cities.json
+    - images/bb.png
+    - images/ba.png
+    - images/r.png
+    - images/eee.png
+    - images/city.png
+    - images/3d.png
+    - images/eye.png
+    - images/australia.json
+    - images/map2.html
+    - images/login.png
+    - images/voronoi.png
+    - images/fl.png
+    - images/navanie.png
+    - images/dee.png
+    - images/quot.png
+    - images/nevk.png
+    - images/matya.png
+    - images/olk.png
+    - images/design.png
+    - images/desk.png
+    - images/arc.png
+    - images/greyy.png
+    - images/vilde.png
+    - images/vild.png
+    - images/vera.png
+    - images/world_map.json
+    - images/donatt.png
+    - images/chart.png
+    - images/bbee.png
+    - images/tink.png
+    - images/pinko.png
+    - images/gooe.png
+    - images/tell.png
+    - images/ara.png
+    - images/pusula.png
+    - images/held.png
+
+
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

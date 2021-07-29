@@ -1,52 +1,125 @@
 import 'package:flutter/material.dart';
+import 'package:test_app_3d/drawer/navigation_drawer_widget.dart';
+import 'package:test_app_3d/finaldirectory/usera.dart';
+
 import 'package:test_app_3d/glowing_button.dart';
-import 'package:test_app_3d/instance.dart';
-import 'package:test_app_3d/location.dart';
-import 'package:test_app_3d/map_packagi.dart';
-import 'package:test_app_3d/mapgoole.dart';
-import 'package:test_app_3d/mapstry/googletry.dart';
-import 'package:test_app_3d/mapstry/syncfusion.dart';
-import 'package:test_app_3d/pages/map_esk.dart';
+import 'package:test_app_3d/homepagenew/newhome.dart';
+
+
+
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer: NavigationDrawerWidget(),
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: const Text("Piton AR-GE Main Page"),
-        backgroundColor: Colors.red,
+        leading: IconButton(
+            onPressed: (){
+              Navigator.of(context)
+                  .pushReplacement(
+                  MaterialPageRoute(builder: (context) => Yenianasayf())
+              );
+            },
+            icon: Icon(Icons.arrow_back)
+        ),
+
+        title: Center(child: const Text("Settings")),
+        backgroundColor: Colors.grey.shade800,
       ) ,
 
       body: Container(
 
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              "images/greyy.png"
+            ),
+            fit: BoxFit.cover,
+          )
+        ),
 
-        color: Colors.black,
+
+
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            //Can change to any color you want.
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: GlowingButton(
-                color1: Colors.orange,
-                color2: Colors.red,
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: GlowingButton(
-                color1: Colors.pinkAccent,
-                color2: Colors.indigoAccent,
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: GlowingButton(
 
-              ),
+
+            //Padding(
+              //padding: const EdgeInsets.all(8.0),
+              //child: GlowingButton(
+                //color1: Colors.orange,
+                //color2: Colors.red,
+              //),
+            //),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                    child: GlowingButton(
+                    color1: Colors.orange,
+                    color2: Colors.red,
+                    ),
+                  ),
+                Text("Location    ",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24
+
+                  ),)
+              ],
             ),
-            SizedBox(height: 10.0,),
-            Center(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: GlowingButton(
+                    color1: Colors.pinkAccent,
+                    color2: Colors.indigoAccent,
+                  ),
+                ),
+                Text("Wifi           ",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24
+
+                ),)
+
+              ],
+
+            ),
+
+            /*Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: GlowingButton(
+
+                  ),
+                ),
+                Text("Night Light",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24
+                  ),)
+              ],
+            ),
+
+             */
+
+
+
+            /*Center(
+
 
               child: ElevatedButton(
 
@@ -65,7 +138,9 @@ class HomePage extends StatelessWidget {
                         fontWeight: FontWeight.bold)),
               ),
             ),
-            ElevatedButton(
+
+             */
+            /*ElevatedButton(
 
 
               child: Text('Harita'),
@@ -78,10 +153,31 @@ class HomePage extends StatelessWidget {
                   primary: Colors.red,
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                   textStyle: TextStyle(
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold)),
+            ),*/
+            IconButton(
+                onPressed: (){
+                  Navigator.of(context)
+                      .pushReplacement(
+                      MaterialPageRoute(
+                      builder: (context)=>
+                  Yenianasayf())
+                  );
+                },
+                icon: Image.asset("images/olk.png",height: 100,),
+
+              splashColor: Colors.redAccent,
+              iconSize: 120.0,
+              tooltip: "Hellö",
             ),
-            ElevatedButton(
+            /*Text("Settings",style: TextStyle(
+              color: Colors.white,
+              fontSize: 36
+            ),),
+
+             */
+            /*ElevatedButton(
 
 
               child: RichText(
@@ -110,7 +206,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => MapView()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Bavnaepomyat()));
               },
               style: ElevatedButton.styleFrom(
 
@@ -121,7 +217,11 @@ class HomePage extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold)),
             ),
-            ElevatedButton(
+
+             */
+
+
+            /*ElevatedButton(
 
 
               child: RichText(
@@ -161,7 +261,9 @@ class HomePage extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold)),
             ),
-            ElevatedButton(
+
+             */
+            /*ElevatedButton(
 
 
               child: RichText(
@@ -190,7 +292,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => MyHomePage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ClickMap()));
               },
               style: ElevatedButton.styleFrom(
 
@@ -201,6 +303,88 @@ class HomePage extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold)),
             ),
+
+             */
+            //ElevatedButton(
+
+
+              //child: RichText(
+                //text: TextSpan(
+
+
+                  //children: const <TextSpan>[
+                    //TextSpan(
+                        //text: 'MAP',
+                        //style: TextStyle(
+                            //fontWeight: FontWeight.bold,
+                            //fontSize: 20.0,
+                           // color: Colors.white
+                       // )
+                    //),
+                    //TextSpan(
+                        //text: 'V5',
+                        //style: TextStyle(
+                          //fontWeight: FontWeight.bold,
+                          //fontSize: 20.0,
+                          //color: Colors.lightBlue,
+
+                        //)
+                    //),
+                  //],
+               // ),
+              //),
+              //onPressed: () {
+                //Navigator.push(context, MaterialPageRoute(builder: (context) => HomePagerr()));
+              //},
+              //style: ElevatedButton.styleFrom(
+
+                  //shape: StadiumBorder(),
+                  //primary: Colors.red,
+                  //padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  //textStyle: TextStyle(
+                      //fontSize: 20,
+                      //fontWeight: FontWeight.bold)),
+            //),
+            //ElevatedButton(
+
+
+              //child: RichText(
+                //text: TextSpan(
+
+
+                  //children: const <TextSpan>[
+                    //TextSpan(
+                        //text: 'MAP',
+                        //style: TextStyle(
+                            //fontWeight: FontWeight.bold,
+                            //fontSize: 20.0,
+                            //color: Colors.white
+                        //)
+                    //),
+                    //TextSpan(
+                        //text: 'V6',
+                        //style: TextStyle(
+                          //fontWeight: FontWeight.bold,
+                          //fontSize: 20.0,
+                          //color: Colors.lightBlue,
+
+                        //)
+                    //),
+                  //],
+                //),
+              //),
+              //onPressed: () {
+                //Navigator.push(context, MaterialPageRoute(builder: (context) => WebViewLocal()));
+              //},
+             // style: ElevatedButton.styleFrom(
+
+                  //shape: StadiumBorder(),
+                  //primary: Colors.red,
+                  //padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  //textStyle: TextStyle(
+                      //fontSize: 20,
+                      //fontWeight: FontWeight.bold)),
+            //),
           ],
         ),
       ),

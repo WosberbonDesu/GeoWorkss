@@ -8,7 +8,7 @@
 
 
     <application
-        android:label="test_app_3d"
+        android:label="Mappel"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC50UnBgxSeGIjv7AMXuEVeKU9XLriQef4"/>

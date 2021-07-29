@@ -395,6 +395,7 @@ class _MapViewState extends State<MapView> {
                         Radius.circular(20.0),
                       ),
                     ),
+
                     width: width * 0.9,
                     child: Padding(
                       padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
